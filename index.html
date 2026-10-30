@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tartalk — Playful AI companions, one tap away</title>
+<meta name="description" content="Tartalk is a playful AI content playground: chat with lovable AI companions, share laughs in group chats, and play mini games right inside the conversation.">
+<style>
+:root{
+  --cream:#FFF6EC; --ink:#1B1B2F; --paper:#FFFFFF;
+  --pink:#FF5DA2; --org:#FF8A3D; --yel:#FFD23F; --mint:#2BD98F; --sky:#35C1F1;
+  --bw:3px; --shadow:7px 7px 0 var(--ink);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--cream);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.65;overflow-x:hidden;
+  background-image:radial-gradient(rgba(27,27,47,.055) 1.6px,transparent 1.6px);
+  background-size:26px 26px;
+}
+::selection{background:var(--yel)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 26px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:var(--bw) solid var(--ink)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:1.5rem;font-weight:900;letter-spacing:-.5px}
+.logo span{color:var(--pink)}
+.nav-links{display:flex;gap:22px;font-weight:700;font-size:.95rem}
+.nav-links a:hover{color:var(--pink)}
+
+/* hero */
+.hero{padding:96px 0 72px;text-align:center}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:900;line-height:1.15;letter-spacing:-1px}
+.hero h1 em{font-style:normal;color:var(--pink)}
+.hero p{max-width:620px;margin:22px auto 0;font-size:1.15rem;color:#4a4a5e}
+.cta{display:inline-block;margin-top:34px;background:var(--pink);color:#fff;font-weight:900;
+  font-size:1.1rem;padding:16px 40px;border:var(--bw) solid var(--ink);border-radius:16px;
+  box-shadow:var(--shadow);transition:transform .15s}
+.cta:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--ink)}
+
+/* features */
+.features{padding:40px 0 90px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.card{background:var(--paper);border:var(--bw) solid var(--ink);border-radius:20px;
+  padding:30px 26px;box-shadow:var(--shadow)}
+.card .emoji{font-size:2.2rem}
+.card h3{margin:14px 0 8px;font-size:1.2rem;font-weight:900}
+.card p{color:#4a4a5e;font-size:.98rem}
+.card.f1{background:#FFE9F3}.card.f2{background:#FFF3E2}.card.f3{background:#E6F9F1}
+
+/* footer */
+footer{border-top:var(--bw) solid var(--ink);background:var(--paper)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;padding:26px}
+footer .links{display:flex;gap:22px;font-weight:700}
+footer a:hover{color:var(--pink)}
+footer .fine{font-size:.85rem;color:#7a7a8c}
+@media (max-width:640px){.nav-links{display:none}.hero{padding:64px 0 48px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="logo">Tar<span>talk</span></div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Playful AI companions,<br><em>one tap away.</em></h1>
+    <p>Tartalk is a fun AI content playground: chat with lovable AI characters, keep the whole group laughing, and play mini games without leaving the conversation.</p>
+    <a class="cta" href="#features">See what's inside</a>
+  </div>
+</header>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="grid">
+      <div class="card f1">
+        <div class="emoji">💬</div>
+        <h3>AI Companions</h3>
+        <p>Pick a character with its own personality and voice — every conversation feels alive and stays engaging.</p>
+      </div>
+      <div class="card f2">
+        <div class="emoji">🎉</div>
+        <h3>Group Chats</h3>
+        <p>Bring several AI characters into one room and let the banter roll. You set the topic, they do the comedy.</p>
+      </div>
+      <div class="card f3">
+        <div class="emoji">🎮</div>
+        <h3>In-chat Mini Games</h3>
+        <p>Play lightweight games right inside the chat box. No downloads, no switching apps — just tap and play.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <div class="fine">© 2026 Tartalk. All rights reserved. · Contact: <a href="mailto:service@tartalk.cn">service@tartalk.cn</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
